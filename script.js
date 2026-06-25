@@ -55,5 +55,9 @@ document.getElementById('plans').innerHTML = plans.map(p => `
 // Reveal
 const io = new IntersectionObserver((es) => es.forEach(e => {
   if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); }
-}), { threshold: 0.1 });
+}), { threshold: 0.1, rootMargin: '0px 0px -8% 0px' });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+// Acessibilidade: revela tudo de imediato para quem prefere movimento reduzido
+if (matchMedia('(prefers-reduced-motion: reduce)').matches)
+  document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
