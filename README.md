@@ -15,6 +15,8 @@ Landing page de produto estilo SaaS para um app fictício de finanças pessoais.
   <a href="https://samuelf27.github.io/fluxo-landing-page/"><b>🔗 Ver ao vivo</b></a>
 </p>
 
+<p align="center"><img src="https://raw.githubusercontent.com/Samuelf27/fluxo-landing-page/main/preview.png" alt="Preview do projeto" width="760" /></p>
+
 ---
 
 ## 📌 Sobre o projeto
